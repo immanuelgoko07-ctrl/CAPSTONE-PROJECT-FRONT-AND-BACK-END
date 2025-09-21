@@ -32,6 +32,7 @@ How will you deploy your project
 
             AUTO AID
    Description:
+  
 This is an app that is designed to help car owners deal with vehicle mechanical errrors.
 People will be able to upload photos and videos to help the web app understand their problem.
 People can also describe their problem and receive help.
