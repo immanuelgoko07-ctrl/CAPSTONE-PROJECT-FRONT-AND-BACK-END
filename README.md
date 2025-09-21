@@ -1,9 +1,3 @@
-‎CAPSTONE PROJECT TEMPLATE‎
-+2
--2
-Lines changed: 2 additions & 2 deletions
-Original file line number	Diff line number	Diff line change
-@@ -1,78 +1,78 @@
 Project Description
 
 
@@ -11,7 +5,6 @@ Project Description
 What is the problem you are solving?
 Businesses or your audience care about problems. Make the problem clear and relatable
 
-- 
 
 What tools did you use?
 Python? GeoPanadas? Google Big Query?
