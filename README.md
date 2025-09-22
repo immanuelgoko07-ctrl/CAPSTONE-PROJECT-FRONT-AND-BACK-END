@@ -80,11 +80,32 @@ Wider market access for spare part suppliers.
 
 Globalization – connecting car owners and mechanics worldwide.
 
-LICENSE
+API KEY
+<script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&libraries=places"></script>
 
----
 
-Would you like me to also generate the **`requirements.txt`** file content so your project can run immediately after someone installs the dependencies?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
