@@ -1,8 +1,27 @@
 # 🚗 AUTO AID – Smart Vehicle Maintenance Companion  
+Table of contents
 
+🚗 AUTO AID – Smart Vehicle Maintenance
+
+✨ Features
+
+🛠️ Tools & Technologies
+
+📂 Project Structure
+
+⚙️ Installation
+
+🔑 API Keys
+
+🚀 Usage
+
+🌍 Deployment
+
+🤝 Contributing
+
+📜 License
 ## 📌 Project Description  
-AUTO AID is a web-based platform designed to make car maintenance simple, affordable, and stress-free. It allows car owners to:  
-- Upload **photos, videos, or text descriptions** of vehicle problems.  
+AUTO AID is a web-based platform designed to make car maintenance simple, affordable, and stress-free. It allows car owners to:
 - Get **diagnostic suggestions** and **DIY guidance**.  
 - Connect with **verified mechanics, repair shops, and genuine spare part suppliers**.  
 
@@ -10,8 +29,7 @@ By bridging the knowledge gap in car maintenance, AUTO AID prevents consumer exp
 
 ---
 
-## ✨ Features  
-- 📷 Upload photos/videos of car issues.  
+## ✨ Features   
 - ✍️ Describe problems in text form.  
 - 🔧 Get mechanic and shop recommendations.  
 - 📍 Location-based mechanic/shop suggestions (Google Maps API integration).  
@@ -82,7 +100,16 @@ Globalization – connecting car owners and mechanics worldwide.
 
 API KEY
 <script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&libraries=places"></script>
+Usage
+Visit: http://127.0.0.1:5000
 
+Upload and find a mechanic.
+
+Flash messages will confirm actions.
+Deployment
+Deploy on Lovable or Heroku.
+
+For file storage in production → use Firebase Storage or Cloudinary instead of local /static/uploads.
 
 
 
