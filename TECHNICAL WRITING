@@ -1,0 +1,119 @@
+📘 Technical Report: Auto Aid – Smart Vehicle Diagnosis and Mechanic Connector
+1. Introduction
+This is an app that allows car owners to use a prompts to desribe their car problems and get instant solutions.It also connects them to verified shops and mechanics.
+
+2. Objectives
+
+The main objectives of Auto Aid are:
+
+To enable car owners to describe mechanical problems in simple prompts and get instant solutions.
+
+To connect users with verified mechanics and shops nearby.
+
+To allow users to upload images/videos of car problems for better troubleshooting.
+
+To create a scalable and user-friendly Flask web app integrated with Firebase for authentication, storage, and database management.
+
+3. Tools and Technologies
+
+Python (Flask): Backend framework for handling logic, APIs, and requests.
+
+HTML, CSS, Bootstrap, JavaScript: Frontend for a responsive and interactive interface.
+
+Firebase:
+
+Authentication (Google Sign-in).
+
+Firestore Database (storing problems, solutions, and mechanic info).
+
+Firebase Storage (car image/video uploads).
+
+Random/Rule-Based AI Logic: For basic car problem diagnosis (future scope: Machine Learning).
+
+4. System Architecture
+
+The Auto Aid system follows a client–server architecture:
+
+Frontend (Client Side):
+
+User enters problem description in a text box.
+
+User may upload images/videos of the car issue.
+
+Data is sent to Flask backend via API.
+
+Backend (Server Side – Flask):
+
+Processes user input with predefined diagnostic rules.
+
+Retrieves a possible solution and mechanic info.
+
+Returns JSON response to frontend.
+
+Stores problem + solution in Firebase Firestore.
+
+Database (Firebase Firestore & Storage):
+
+Stores user accounts (via Firebase Auth).
+
+Stores car problems and suggested solutions.
+
+Stores uploaded images/videos in Firebase Storage.
+
+5. Implementation
+5.1 Backend (Flask – Python)
+
+Created a /diagnose route that accepts POST requests.
+
+Extracts car problem from user input.
+
+Matches keywords (e.g., “brake”, “engine”, “battery”) with rule-based solutions.
+
+Randomly assigns a verified mechanic from the database.
+
+Returns JSON response to frontend.
+
+5.2 Frontend (HTML + Bootstrap + JavaScript)
+
+Homepage provides a textarea for problem descriptions.
+
+Submit button sends data to Flask backend using AJAX fetch.
+
+Results (solution + mechanic info) are displayed dynamically.
+
+Firebase functions enable Google login, Firestore storage, and image upload.
+
+5.3 Firebase Integration
+
+Configured Firebase in frontend with API key and project credentials.
+
+Implemented Google Authentication for user login.
+
+Integrated Firestore to store problem–solution pairs.
+
+Added Firebase Storage to upload and store images of car issues.
+
+6. Key Features
+
+✅ User-friendly interface for describing car issues.
+✅ Instant diagnostic suggestions using Flask logic.
+✅ Nearby mechanic recommendations from database.
+✅ Firebase Authentication for secure login.
+✅ Firestore database for storing reports and solutions.
+✅ Firebase Storage for uploading car images/videos.
+
+7. Future Improvements
+
+Integrate Machine Learning/NLP models for smarter problem diagnosis.
+
+Add GPS-based mechanic search instead of random selection.
+
+Enable real-time chat with mechanics inside the app.
+
+Add service history tracking and next-service reminders.
+
+Build a mobile app version (using Flutter or React Native).
+
+8. Conclusion
+
+Auto Aid bridges the gap between car owners and verified mechanics while offering instant troubleshooting. By combining Flask (backend), Firebase (authentication, storage, database), and a responsive frontend, the app provides a scalable foundation for smart vehicle maintenance. Future work can enhance its diagnostic accuracy and expand features to offer a complete vehicle management ecosystem
