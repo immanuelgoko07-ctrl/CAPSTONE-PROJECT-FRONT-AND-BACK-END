@@ -47,10 +47,32 @@ By bridging the knowledge gap in car maintenance, AUTO AID prevents consumer exp
 - **Other APIs**: Google Maps API (for shop/mechanic locations)  
 
 ---
+USE CASE DIAGRAM
+usecaseDiagram
+  actor User
+  actor Mechanic
+  actor Admin
 
+  rectangle "Auto Aid System" {
+      User --> (Describe Car Problem)
+      User --> (Upload Car Image/Video)
+      User --> (Login / Authentication)
+      User --> (Receive Suggested Solution)
+      User --> (Find Nearby Mechanic)
 
+      Mechanic --> (Register Shop/Service)
+      Mechanic --> (Verify Profile)
 
+      Admin --> (Verify Mechanics)
+      Admin --> (Manage Database)
+  }
 
+  (Login / Authentication) --> (Firebase Auth)
+  (Upload Car Image/Video) --> (Firebase Storage)
+  (Describe Car Problem) --> (Flask Diagnosis Engine)
+  (Find Nearby Mechanic) --> (Firestore Database)
+
+ 
 ## 🚀 Installation & Setup  
 
 ### 1. Clone the repository  
