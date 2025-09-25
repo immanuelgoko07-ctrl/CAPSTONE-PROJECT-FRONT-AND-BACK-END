@@ -47,6 +47,14 @@ By bridging the knowledge gap in car maintenance, AUTO AID prevents consumer exp
 - **Other APIs**: Google Maps API (for shop/mechanic locations)  
 
 ---
+SYSTEM ARCHITECTURE
++-------------------+         +-------------------+          +-------------------+
+|   Frontend (UI)   | <-----> |  Flask Backend    | <------> |   Firebase Cloud  |
+| - HTML, CSS, JS   |         | - Python (Flask)  |          | - Firestore (DB)  |
+| - User Input      |         | - Diagnosis Logic |          | - Storage (Images)|
+| - Image Upload    |         | - API Responses   |          | - Auth (Users)    |
++-------------------+         +-------------------+          +-------------------+
+
 
 ## 🚀 Installation & Setup  
 
