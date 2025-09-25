@@ -1,0 +1,9 @@
+🚗 Auto Aid: Smart Web App for Car Problem Diagnosis
+
+Maintaining a car can be stressful, especially when unexpected issues arise, and finding a reliable mechanic becomes a challenge. That’s where Auto Aid comes in — a web application designed to help car owners diagnose problems quickly and connect with verified mechanics nearby.
+
+With Auto Aid, users can simply describe their car issue in natural language or upload an image/video of the problem. The app instantly suggests possible solutions using a Flask backend with rule-based logic. To make the experience seamless, Auto Aid integrates with Firebase for authentication, real-time data storage, and secure image uploads.
+
+This combination ensures that users not only get immediate troubleshooting advice but also access to trusted auto shops and mechanics in their area. Future improvements include adding machine learning for smarter diagnoses and GPS-based mechanic matching.
+
+Auto Aid is more than an app — it’s your digital car companion.
