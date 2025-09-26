@@ -122,7 +122,8 @@ Flash messages will confirm actions.
 Deployment
 Deploy on Lovable or Heroku.
 
-For file storage in production → use Firebase Storage or Cloudinary instead of local /static/uploads.
+
+https://github.com/immanuelgoko07-ctrl/CAPSTONE-PROJECT-TEMPLATE
 
 
 
